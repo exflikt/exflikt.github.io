@@ -1,0 +1,212 @@
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+OPTIONS: num:nil toc:nil html-postamble:nil
+#+OPTIONS: reveal_title_slide:nil
+#+TITLE: org-modeという闇鍋マークアップ言語について
+#+LANGUAGE: ja
+# https://revealjs.com/config/
+#+REVEAL_INIT_OPTIONS: hash:true, keyboard:true, slideNumber:true, transition:'none'
+# https://revealjs.com/themes/
+#+REVEAL_THEME: white-contrast
+#+REVEAL_PLUGINS: (markdown highlight notes)
+#+HTML_HEAD_EXTRA: <meta property="og:title" content="org-modeという闇鍋マークアップ言語について" />
+#+HTML_HEAD_EXTRA: <meta property="og:type" content="website" />
+#+HTML_HEAD_EXTRA: <meta property="og:url" content="https://exflikt.github.io/file/markup-in-org-mode.html" />
+# #+HTML_HEAD_EXTRA: <meta property="og:description" content="aaa" />
+#+HTML_HEAD_EXTRA: <meta property="og:locale" content="ja_JP" />
+
+* org-modeという @@html:<br>@@ 闇鍋マークアップ言語について
+
+* マークアップ言語とは
+
+文書の構造、フォーマットを記述する言語
+
+- LaTeX
+- XML, JSON, YAML
+- HTML
+- Markdown
+- org-mode
+
+#+begin_notes
+マークアップ言語は文章の構造とかフォーマットを記述する言語。
+幾つか例を並べた。
+
+LaTeX は組版システムとかで使われてガチガチにやる人はこれを使う。
+
+XML, JSON, YAMLは文章のフォーマットというよりはデータの構造を記述する言語。
+WordファイルはZipファイルになっていて中身はXMLファイルの集まりになっている。
+Wordファイルを編集しているときはXMLファイルのどっかの属性値を変えていたりする。
+
+HTML はWebブラウザで表示されるコンテンツを記述するのに使われる言語。
+ウェブサイトを閲覧しているときはブラウザがHTMLファイルを見やすい形に描画している。
+
+後は、Markdownとorg-mode だが、Markdownについては
+org-mode と書き心地が似ているので詳しく見ていく。
+#+end_notes
+
+** Markdown記法
+
+#+begin_src markdown
+  # ヘッダー
+  ## 小さいヘッダー
+  ### さらに小さいヘッダー
+
+  [リンク](https://youtu.be/dQw4w9WgXcQ)
+
+  - **強調**
+  - *イタリック*
+  - __下線__
+
+  `single line code`
+#+end_src
+
+#+begin_notes
+MarkdownはテキストファイルHTMLよりも書くのが簡単な言語。
+
+ハッシュ記号の数を変えてヘッダーで段落の階層を作ったり、
+四角括弧と丸括弧でリンクを埋め込んだり、
+文字を強調したり、
+ソースコードなんかもバッククオートで書ける。
+
+Discord, 掲示板サイトのReddit, Notionで使える。
+#+end_notes
+
+** Markdown記法
+
+[[./markdown.png]]
+
+* org-mode
+
+- Emacsで使うために開発された
+- 実はMarkdown (2004年) よりも前に出来ている (2003年)
+
+** org-mode記法
+
+#+begin_src org
+  ,* ヘッダー
+  ,** 小さいヘッダー
+  ,*** さらに小さいヘッダー
+
+  - *強調*
+  - /イタリック/
+  - _下線_
+  - +取り消し線+
+
+  =single line code=
+#+end_src
+
+#+begin_notes
+  org-mode も Markdown と似た感じで書ける。
+  つかっている文字がちょっと違う
+#+end_notes
+
+** org-mode記法
+[[./org-mode.png]]
+
+* プログラムを埋め込む
+
+#+begin_src org
+  ,#+begin_src C :results output
+    #include <stdio.h>
+    int main() {
+      https://x.com/thingskatedid/status/1370862460735868928
+      int number = 0;
+      char *string = (char *)&number;
+      0[string] = 'x';
+      1[string] = 'y';
+      2[string] = 'z';
+      3[string] = '\0';
+      printf("string = \"%s\"\n", string);
+      printf("number = %#010x\n", number);
+    }
+  ,#+end_src
+#+end_src
+
+** 実行結果
+
+=C-c C-c= で実行して結果が見れる
+
+#+begin_src C :results output :eval never-export :exports both
+  #include <stdio.h>
+  int main() {
+    https://x.com/thingskatedid/status/1370862460735868928
+    int number = 0;
+    char *string = (char *)&number;
+    0[string] = 'x';
+    1[string] = 'y';
+    2[string] = 'z';
+    3[string] = '\0';
+    printf("string = \"%s\"\n", string);
+    printf("number = %#010x\n", number);
+  }
+#+end_src
+
+#+RESULTS:
+: string = "xyz"
+: number = 0x007a7978
+
+#+begin_notes
+コードにカーソルポインタが乗っている状態で
+コントロールCを2回押すと実行することができて、
+コードの下に結果が表示されます。
+#+end_notes
+
+* スライドもOrg-Mode
+
+[[./slides.png]]
+
+** [[https://github.com/yjwen/org-reveal][=ox-reveal=]] でスライド生成
+[[https://revealjs.com/][reveal.js]] フレームワークを元にスライド化
+
+=M-x load-library= , then =ox-reveal=
+
+Export: =C-c C-e R R=
+
+#+begin_notes
+このスライドはブラウザで動かしているが、
+これは reveal.js というを使っている。
+有志の人が ox-reveal というパッケージを作っている。
+これを使って Org-mode 形式で書かれたマークアップファイルをいい感じに
+reveal.js と互換性のある HTML 文書に変換しています。
+#+end_notes
+
+* 補足スライド
+
+* C言語の配列添字は可換演算
+
+#+begin_src C :eval never
+  int array[10];
+
+  array[3] = 0xbad;
+
+  [3]array = 0xbad;
+#+end_src
+
+** 配列の添字アクセスはポインタ加算 + 参照外し
+
+#+begin_src C :eval never
+  array[3] = 0xbad;
+
+  ,*(array + 3) = 0xbad; // 糖衣構文
+#+end_src
+
+ポインタ加算 =array + 3= は足す順番を
+
+変えても同じ結果になるので...
+
+#+begin_src c :eval never
+  ,*(3 + array) = 0xbad;
+
+  3[array] = 0xbad;
+#+end_src
+
+* YouTube動画の埋め込み
+
+#+REVEAL_HTML: <iframe width="420" height="315" src="https://www.youtube.com/embed/Awf45u6zrP0" frameborder="0" allowfullscreen></iframe>
+
+* GIFの埋め込み
+
+#+REVEAL_HTML: <div class="tenor-gif-embed" data-postid="26004262" data-aspect-ratio="1.47465" data-width="100%"><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+* GIFの埋め込み2
+
+#+REVEAL_HTML: <div class="tenor-gif-embed" data-postid="5220700" data-share-method="host" data-aspect-ratio="1.33333" data-width="100%"><a href="https://tenor.com/view/kazoo-gif-5220700">Kazoo Kid GIF</a>from <a href="https://tenor.com/search/kazoo-gifs">Kazoo GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
