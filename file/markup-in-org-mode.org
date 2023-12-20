@@ -16,6 +16,12 @@
 
 * org-modeという @@html:<br>@@ 闇鍋マークアップ言語について
 
+SlideはWeb上にあります:
+#+ATTR_HTML: :width 30%
+[[./qrcode.png]]
+
+https://exflikt.github.io/file/markup-in-org-mode.html
+
 * マークアップ言語とは
 
 文書の構造、フォーマットを記述する言語
