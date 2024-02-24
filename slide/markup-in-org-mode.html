@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<title>org-modeという闇鍋マークアップ言語について</title>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white-contrast.css" id="theme"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta property="og:title" content="org-modeという闇鍋マークアップ言語について" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yaledsuomr.one/slide/markup-in-org-mode.html" />
+<meta property="og:locale" content="ja_JP" />
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+<section id="slide-org95e95f9">
+<h2 id="org95e95f9">org-modeという <br> 闇鍋マークアップ言語について</h2>
+<p>
+SlideはWeb上にあります:
+</p>
+
+<div class="figure">
+<p><img src="/assets/qrcode.png" alt="qrcode.png" width="30%" />
+</p>
+</div>
+
+<p>
+<a href="https://exflikt.github.io/slide/markup-in-org-mode.html">https://exflikt.github.io/slide/markup-in-org-mode.html</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org4390a42">
+<h2 id="org4390a42">マークアップ言語とは</h2>
+<p>
+文書の構造、フォーマットを記述する言語
+</p>
+
+<ul>
+<li>LaTeX</li>
+<li>XML, JSON, YAML</li>
+<li>HTML</li>
+<li>Markdown</li>
+<li>org-mode</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+マークアップ言語は文章の構造とかフォーマットを記述する言語。
+幾つか例を並べた。
+</p>
+
+<p>
+LaTeX は組版システムとかで使われてガチガチにやる人はこれを使う。
+</p>
+
+<p>
+XML, JSON, YAMLは文章のフォーマットというよりはデータの構造を記述する言語。
+WordファイルはZipファイルになっていて中身はXMLファイルの集まりになっている。
+Wordファイルを編集しているときはXMLファイルのどっかの属性値を変えていたりする。
+</p>
+
+<p>
+HTML はWebブラウザで表示されるコンテンツを記述するのに使われる言語。
+ウェブサイトを閲覧しているときはブラウザがHTMLファイルを見やすい形に描画している。
+</p>
+
+<p>
+後は、Markdownとorg-mode だが、Markdownについては
+org-mode と書き心地が似ているので詳しく見ていく。
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orge2aebe0">
+<h3 id="orge2aebe0">Markdown記法</h3>
+<div class="org-src-container">
+
+<pre   ><code class="markdown" ># ヘッダー
+## 小さいヘッダー
+### さらに小さいヘッダー
+
+[リンク](https://youtu.be/dQw4w9WgXcQ)
+
+- **強調**
+- *イタリック*
+- __下線__
+
+`single line code`
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+MarkdownはテキストファイルHTMLよりも書くのが簡単な言語。
+</p>
+
+<p>
+ハッシュ記号の数を変えてヘッダーで段落の階層を作ったり、
+四角括弧と丸括弧でリンクを埋め込んだり、
+文字を強調したり、
+ソースコードなんかもバッククオートで書ける。
+</p>
+
+<p>
+Discord, 掲示板サイトのReddit, Notionで使える。
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org2b22c62">
+<h3 id="org2b22c62">Markdown記法</h3>
+
+<div class="figure">
+<p><img src="/assets/markdown.png" alt="markdown.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org16a8603">
+<h2 id="org16a8603">org-mode</h2>
+<ul>
+<li>Emacsで使うために開発された</li>
+<li>実はMarkdown (2004年) よりも前に出来ている (2003年)</li>
+
+</ul>
+
+</section>
+<section id="slide-orgeff7846">
+<h3 id="orgeff7846">org-mode記法</h3>
+<div class="org-src-container">
+
+<pre   ><code class="org" >* ヘッダー
+** 小さいヘッダー
+*** さらに小さいヘッダー
+
+- *強調*
+- /イタリック/
+- _下線_
+- +取り消し線+
+
+=single line code=
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+org-mode も Markdown と似た感じで書ける。
+つかっている文字がちょっと違う
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org79465f6">
+<h3 id="org79465f6">org-mode記法</h3>
+
+<div class="figure">
+<p><img src="/assets/org-mode.png" alt="org-mode.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orga795c51">
+<h2 id="orga795c51">プログラムを埋め込む</h2>
+<div class="org-src-container">
+
+<pre   ><code class="org" >#+begin_src C :results output
+  #include &lt;stdio.h&gt;
+  int main() {
+    https://x.com/thingskatedid/status/1370862460735868928
+    int number = 0;
+    char *string = (char *)&amp;number;
+    0[string] = 'x';
+    1[string] = 'y';
+    2[string] = 'z';
+    3[string] = '\0';
+    printf("string = \"%s\"\n", string);
+    printf("number = %#010x\n", number);
+  }
+#+end_src
+</code></pre>
+</div>
+
+</section>
+<section id="slide-orgb0c2d7b">
+<h3 id="orgb0c2d7b">実行結果</h3>
+<p>
+<code>C-c C-c</code> で実行して結果が見れる
+</p>
+
+<div class="org-src-container">
+
+<pre   ><code class="C" >#include &lt;stdio.h&gt;
+int main() {
+  https://x.com/thingskatedid/status/1370862460735868928
+  int number = 0;
+  char *string = (char *)&amp;number;
+  0[string] = 'x';
+  1[string] = 'y';
+  2[string] = 'z';
+  3[string] = '\0';
+  printf("string = \"%s\"\n", string);
+  printf("number = %#010x\n", number);
+}
+</code></pre>
+</div>
+
+<pre class="example">
+string = "xyz"
+number = 0x007a7978
+</pre>
+
+
+<aside class="notes">
+<p>
+コードにカーソルポインタが乗っている状態で
+コントロールCを2回押すと実行することができて、
+コードの下に結果が表示されます。
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf82d449">
+<h2 id="orgf82d449">スライドもOrg-Mode</h2>
+
+<div class="figure">
+<p><img src="/assets/slides.png" alt="slides.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-org1bac888">
+<h3 id="org1bac888"><a href="https://github.com/yjwen/org-reveal"><code>ox-reveal</code></a> でスライド生成</h3>
+<p>
+<a href="https://revealjs.com/">reveal.js</a> フレームワークを元にスライド化
+</p>
+
+<p>
+<code>M-x load-library</code> , then <code>ox-reveal</code>
+</p>
+
+<p>
+Export: <code>C-c C-e R R</code>
+</p>
+
+<aside class="notes">
+<p>
+このスライドはブラウザで動かしているが、
+これは reveal.js というを使っている。
+有志の人が ox-reveal というパッケージを作っている。
+これを使って Org-mode 形式で書かれたマークアップファイルをいい感じに
+reveal.js と互換性のある HTML 文書に変換しています。
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org91489d7">
+<h2 id="org91489d7">補足スライド</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-org92a7e01">
+<h2 id="org92a7e01">C言語の配列添字は可換演算</h2>
+<div class="org-src-container">
+
+<pre   ><code class="C" >int array[10];
+
+array[3] = 0xbad;
+
+[3]array = 0xbad;
+</code></pre>
+</div>
+
+</section>
+<section id="slide-orgb939622">
+<h3 id="orgb939622">配列の添字アクセスはポインタ加算 + 参照外し</h3>
+<div class="org-src-container">
+
+<pre   ><code class="C" >array[3] = 0xbad;
+
+*(array + 3) = 0xbad; // 糖衣構文
+</code></pre>
+</div>
+
+<p>
+ポインタ加算 <code>array + 3</code> は足す順番を
+</p>
+
+<p>
+変えても同じ結果になるので&#x2026;
+</p>
+
+<div class="org-src-container">
+
+<pre   ><code class="c" >*(3 + array) = 0xbad;
+
+3[array] = 0xbad;
+</code></pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org829a566">
+<h2 id="org829a566">YouTube動画の埋め込み</h2>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Awf45u6zrP0" frameborder="0" allowfullscreen></iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-org06f260c">
+<h2 id="org06f260c">GIFの埋め込み</h2>
+<div class="tenor-gif-embed" data-postid="26004262" data-aspect-ratio="1.47465" data-width="100%"><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+</section>
+</section>
+<section>
+<section id="slide-org08e6af4">
+<h2 id="org08e6af4">GIFの埋め込み2</h2>
+<div class="tenor-gif-embed" data-postid="5220700" data-share-method="host" data-aspect-ratio="1.33333" data-width="100%"><a href="https://tenor.com/view/kazoo-gif-5220700">Kazoo Kid GIF</a>from <a href="https://tenor.com/search/kazoo-gifs">Kazoo GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+hash:true, keyboard:true, slideNumber:true, transition:'none',
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
