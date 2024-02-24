@@ -245,9 +245,9 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 
-<div id="outline-container-org230374e" class="outline-2">
-<h2 id="org230374e">org-modeという <br> 闇鍋マークアップ言語について</h2>
-<div class="outline-text-2" id="text-org230374e">
+<div id="outline-container-orgb0b5f8d" class="outline-2">
+<h2 id="orgb0b5f8d"><code>org-mode</code> という <br> 闇鍋マークアップ言語について</h2>
+<div class="outline-text-2" id="text-orgb0b5f8d">
 <p>
 SlideはWeb上にあります:
 </p>
@@ -263,9 +263,9 @@ SlideはWeb上にあります:
 </div>
 </div>
 
-<div id="outline-container-orgf0ead93" class="outline-2">
-<h2 id="orgf0ead93">マークアップ言語とは</h2>
-<div class="outline-text-2" id="text-orgf0ead93">
+<div id="outline-container-org47618a6" class="outline-2">
+<h2 id="org47618a6">マークアップ言語とは</h2>
+<div class="outline-text-2" id="text-org47618a6">
 <p>
 文書の構造、フォーマットを記述する言語
 </p>
@@ -307,9 +307,9 @@ org-mode と書き心地が似ているので詳しく見ていく。
 </div>
 </div>
 
-<div id="outline-container-orgd6f0fdb" class="outline-3">
-<h3 id="orgd6f0fdb">Markdown記法</h3>
-<div class="outline-text-3" id="text-orgd6f0fdb">
+<div id="outline-container-org38f9064" class="outline-3">
+<h3 id="org38f9064"><code>Markdown</code> 記法</h3>
+<div class="outline-text-3" id="text-org38f9064">
 <div class="org-src-container">
 <pre class="src src-markdown"># ヘッダー
 ## 小さいヘッダー
@@ -345,9 +345,9 @@ Discord, 掲示板サイトのReddit, Notionで使える。
 </div>
 </div>
 
-<div id="outline-container-org76b0958" class="outline-3">
-<h3 id="org76b0958">Markdown記法</h3>
-<div class="outline-text-3" id="text-org76b0958">
+<div id="outline-container-orgc3c6e69" class="outline-3">
+<h3 id="orgc3c6e69"><code>Markdown</code> 記法</h3>
+<div class="outline-text-3" id="text-orgc3c6e69">
 
 <div class="figure">
 <p><img src="file:///assets/markdown-in-org-mode_markdown.png" alt="markdown-in-org-mode_markdown.png" />
@@ -357,18 +357,18 @@ Discord, 掲示板サイトのReddit, Notionで使える。
 </div>
 </div>
 
-<div id="outline-container-orga6d3488" class="outline-2">
-<h2 id="orga6d3488">org-mode</h2>
-<div class="outline-text-2" id="text-orga6d3488">
+<div id="outline-container-org7eb7ce8" class="outline-2">
+<h2 id="org7eb7ce8"><code>org-mode</code></h2>
+<div class="outline-text-2" id="text-org7eb7ce8">
 <ul class="org-ul">
 <li>Emacsで使うために開発された</li>
 <li>実はMarkdown (2004年) よりも前に出来ている (2003年)</li>
 </ul>
 </div>
 
-<div id="outline-container-org5b61b7f" class="outline-3">
-<h3 id="org5b61b7f">org-mode記法</h3>
-<div class="outline-text-3" id="text-org5b61b7f">
+<div id="outline-container-org8599c39" class="outline-3">
+<h3 id="org8599c39"><code>org-mode</code> 記法</h3>
+<div class="outline-text-3" id="text-org8599c39">
 <div class="org-src-container">
 <pre class="src src-org">* ヘッダー
 ** 小さいヘッダー
@@ -393,9 +393,9 @@ org-mode も Markdown と似た感じで書ける。
 </div>
 </div>
 
-<div id="outline-container-org22fea13" class="outline-3">
-<h3 id="org22fea13">org-mode記法</h3>
-<div class="outline-text-3" id="text-org22fea13">
+<div id="outline-container-orgfc12f3c" class="outline-3">
+<h3 id="orgfc12f3c"><code>org-mode</code> 記法</h3>
+<div class="outline-text-3" id="text-orgfc12f3c">
 
 <div class="figure">
 <p><img src="file:///assets/markdown-in-org-mode_org-mode.png" alt="markdown-in-org-mode_org-mode.png" />
@@ -405,9 +405,9 @@ org-mode も Markdown と似た感じで書ける。
 </div>
 </div>
 
-<div id="outline-container-org597e552" class="outline-2">
-<h2 id="org597e552">プログラムを埋め込む</h2>
-<div class="outline-text-2" id="text-org597e552">
+<div id="outline-container-org4fabdf2" class="outline-2">
+<h2 id="org4fabdf2">プログラムを埋め込む</h2>
+<div class="outline-text-2" id="text-org4fabdf2">
 <div class="org-src-container">
 <pre class="src src-org">#+begin_src C :results output
   #include &lt;stdio.h&gt;
@@ -427,9 +427,9 @@ org-mode も Markdown と似た感じで書ける。
 </div>
 </div>
 
-<div id="outline-container-orga5998ea" class="outline-3">
-<h3 id="orga5998ea">実行結果</h3>
-<div class="outline-text-3" id="text-orga5998ea">
+<div id="outline-container-org43f883c" class="outline-3">
+<h3 id="org43f883c">実行結果</h3>
+<div class="outline-text-3" id="text-org43f883c">
 <p>
 <code>C-c C-c</code> で実行して結果が見れる
 </p>
@@ -468,9 +468,9 @@ number = 0x007a7978
 </div>
 </div>
 
-<div id="outline-container-orge7861b5" class="outline-2">
-<h2 id="orge7861b5">スライドもOrg-Mode</h2>
-<div class="outline-text-2" id="text-orge7861b5">
+<div id="outline-container-orgcb4982f" class="outline-2">
+<h2 id="orgcb4982f">スライドも <code>org-mode</code></h2>
+<div class="outline-text-2" id="text-orgcb4982f">
 
 <div class="figure">
 <p><img src="file:///assets/markdown-in-org-mode_slides.png" alt="markdown-in-org-mode_slides.png" />
@@ -478,9 +478,9 @@ number = 0x007a7978
 </div>
 </div>
 
-<div id="outline-container-org1c2da18" class="outline-3">
-<h3 id="org1c2da18"><a href="https://github.com/yjwen/org-reveal"><code>ox-reveal</code></a> でスライド生成</h3>
-<div class="outline-text-3" id="text-org1c2da18">
+<div id="outline-container-org31d64fa" class="outline-3">
+<h3 id="org31d64fa"><a href="https://github.com/yjwen/org-reveal"><code>ox-reveal</code></a> でスライド生成</h3>
+<div class="outline-text-3" id="text-org31d64fa">
 <p>
 <a href="https://revealjs.com/">reveal.js</a> フレームワークを元にスライド化
 </p>
@@ -507,13 +507,13 @@ reveal.js と互換性のある HTML 文書に変換しています。
 </div>
 </div>
 
-<div id="outline-container-org040c2fb" class="outline-2">
-<h2 id="org040c2fb">補足スライド</h2>
+<div id="outline-container-org702a538" class="outline-2">
+<h2 id="org702a538">補足スライド</h2>
 </div>
 
-<div id="outline-container-org2c990d8" class="outline-2">
-<h2 id="org2c990d8">C言語の配列添字は可換演算</h2>
-<div class="outline-text-2" id="text-org2c990d8">
+<div id="outline-container-orgc44313a" class="outline-2">
+<h2 id="orgc44313a">C言語の配列添字は可換演算</h2>
+<div class="outline-text-2" id="text-orgc44313a">
 <div class="org-src-container">
 <pre class="src src-C">int array[10];
 
@@ -524,9 +524,9 @@ array[3] = 0xbad;
 </div>
 </div>
 
-<div id="outline-container-org8cd42bd" class="outline-3">
-<h3 id="org8cd42bd">配列の添字アクセスはポインタ加算 + 参照外し</h3>
-<div class="outline-text-3" id="text-org8cd42bd">
+<div id="outline-container-orgc4c7e04" class="outline-3">
+<h3 id="orgc4c7e04">配列の添字アクセスはポインタ加算 + 参照外し</h3>
+<div class="outline-text-3" id="text-orgc4c7e04">
 <div class="org-src-container">
 <pre class="src src-C">array[3] = 0xbad;
 
@@ -552,21 +552,21 @@ array[3] = 0xbad;
 </div>
 </div>
 
-<div id="outline-container-org1be9087" class="outline-2">
-<h2 id="org1be9087">YouTube動画の埋め込み</h2>
-<div class="outline-text-2" id="text-org1be9087">
+<div id="outline-container-orgec26df0" class="outline-2">
+<h2 id="orgec26df0"><code>YouTube</code> 動画の埋め込み</h2>
+<div class="outline-text-2" id="text-orgec26df0">
 </div>
 </div>
 
-<div id="outline-container-org3c72c04" class="outline-2">
-<h2 id="org3c72c04">GIFの埋め込み</h2>
-<div class="outline-text-2" id="text-org3c72c04">
+<div id="outline-container-org28f0c2c" class="outline-2">
+<h2 id="org28f0c2c">GIFの埋め込み</h2>
+<div class="outline-text-2" id="text-org28f0c2c">
 </div>
 </div>
 
-<div id="outline-container-org73a74ef" class="outline-2">
-<h2 id="org73a74ef">GIFの埋め込み2</h2>
-<div class="outline-text-2" id="text-org73a74ef">
+<div id="outline-container-orge3c19fa" class="outline-2">
+<h2 id="orge3c19fa">GIFの埋め込み2</h2>
+<div class="outline-text-2" id="text-orge3c19fa">
 </div>
 </div>
 </div>
