@@ -14,7 +14,7 @@
 # #+HTML_HEAD_EXTRA: <meta property="og:description" content="aaa" />
 #+HTML_HEAD_EXTRA: <meta property="og:locale" content="ja_JP" />
 
-* org-modeという @@html:<br>@@ 闇鍋マークアップ言語について
+* =org-mode= という @@html:<br>@@ 闇鍋マークアップ言語について
 
 SlideはWeb上にあります:
 #+ATTR_HTML: :width 30%
@@ -49,7 +49,7 @@ HTML はWebブラウザで表示されるコンテンツを記述するのに使
 org-mode と書き心地が似ているので詳しく見ていく。
 #+end_notes
 
-** Markdown記法
+** =Markdown= 記法
 
 #+begin_src markdown
   # ヘッダー
@@ -76,16 +76,16 @@ MarkdownはテキストファイルHTMLよりも書くのが簡単な言語。
 Discord, 掲示板サイトのReddit, Notionで使える。
 #+end_notes
 
-** Markdown記法
+** =Markdown= 記法
 
 [[file:/assets/markdown-in-org-mode_markdown.png]]
 
-* org-mode
+* =org-mode=
 
 - Emacsで使うために開発された
 - 実はMarkdown (2004年) よりも前に出来ている (2003年)
 
-** org-mode記法
+** =org-mode= 記法
 
 #+begin_src org
   ,* ヘッダー
@@ -105,7 +105,7 @@ Discord, 掲示板サイトのReddit, Notionで使える。
   つかっている文字がちょっと違う
 #+end_notes
 
-** org-mode記法
+** =org-mode= 記法
 [[file:/assets/markdown-in-org-mode_org-mode.png]]
 
 * プログラムを埋め込む
@@ -156,7 +156,7 @@ Discord, 掲示板サイトのReddit, Notionで使える。
 コードの下に結果が表示されます。
 #+end_notes
 
-* スライドもOrg-Mode
+* スライドも =org-mode=
 
 [[file:/assets/markdown-in-org-mode_slides.png]]
 
@@ -205,7 +205,7 @@ reveal.js と互換性のある HTML 文書に変換しています。
   3[array] = 0xbad;
 #+end_src
 
-* YouTube動画の埋め込み
+* =YouTube= 動画の埋め込み
 
 #+REVEAL_HTML: <iframe width="420" height="315" src="https://www.youtube.com/embed/Awf45u6zrP0" frameborder="0" allowfullscreen></iframe>
 
