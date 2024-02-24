@@ -1,0 +1,22 @@
+#+TITLE: somewhere-between-good-and-not-bad enough
+
+#+begin_src emacs-lisp :eval never-export :results output drawer :exports results
+  (progn
+    (setq this-dir (file-name-directory buffer-file-name))
+    (setq files (directory-files-recursively this-dir ".*\.org"))
+    (mapc
+     (lambda (f)
+       (progn (setq f (substring f (length this-dir)))
+	      (princ (concat "[[/" f "][/" (file-name-with-extension f "html") "]]\n\n"))))
+     files))
+#+end_src
+
+#+RESULTS:
+:results:
+[[/blog/epistemological-anarchism.org][/blog/epistemological-anarchism.html]]
+
+[[/slide/markup-in-org-mode.org][/slide/markup-in-org-mode.html]]
+
+[[/index.org][/index.html]]
+
+:end:
