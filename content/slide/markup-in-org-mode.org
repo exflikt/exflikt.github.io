@@ -10,7 +10,7 @@
 #+REVEAL_PLUGINS: (markdown highlight notes)
 #+HTML_HEAD_EXTRA: <meta property="og:title" content="org-modeという闇鍋マークアップ言語について" />
 #+HTML_HEAD_EXTRA: <meta property="og:type" content="website" />
-#+HTML_HEAD_EXTRA: <meta property="og:url" content="https://exflikt.github.io/file/markup-in-org-mode.html" />
+#+HTML_HEAD_EXTRA: <meta property="og:url" content="https://yaledsuomr.one/slide/markup-in-org-mode.html" />
 # #+HTML_HEAD_EXTRA: <meta property="og:description" content="aaa" />
 #+HTML_HEAD_EXTRA: <meta property="og:locale" content="ja_JP" />
 
@@ -18,9 +18,9 @@
 
 SlideはWeb上にあります:
 #+ATTR_HTML: :width 30%
-[[./qrcode.png]]
+[[file:/assets/qrcode.png]]
 
-https://exflikt.github.io/file/markup-in-org-mode.html
+https://exflikt.github.io/slide/markup-in-org-mode.html
 
 * マークアップ言語とは
 
@@ -78,7 +78,7 @@ Discord, 掲示板サイトのReddit, Notionで使える。
 
 ** Markdown記法
 
-[[./markdown.png]]
+[[file:/assets/markdown.png]]
 
 * org-mode
 
@@ -106,7 +106,7 @@ Discord, 掲示板サイトのReddit, Notionで使える。
 #+end_notes
 
 ** org-mode記法
-[[./org-mode.png]]
+[[file:/assets/org-mode.png]]
 
 * プログラムを埋め込む
 
@@ -158,7 +158,7 @@ Discord, 掲示板サイトのReddit, Notionで使える。
 
 * スライドもOrg-Mode
 
-[[./slides.png]]
+[[file:/assets/slides.png]]
 
 ** [[https://github.com/yjwen/org-reveal][=ox-reveal=]] でスライド生成
 [[https://revealjs.com/][reveal.js]] フレームワークを元にスライド化
