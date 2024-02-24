@@ -18,7 +18,7 @@
 
 SlideはWeb上にあります:
 #+ATTR_HTML: :width 30%
-[[file:/assets/qrcode.png]]
+[[file:/assets/markdown-in-org-mode_qrcode.png]]
 
 https://exflikt.github.io/slide/markup-in-org-mode.html
 
@@ -78,7 +78,7 @@ Discord, 掲示板サイトのReddit, Notionで使える。
 
 ** Markdown記法
 
-[[file:/assets/markdown.png]]
+[[file:/assets/markdown-in-org-mode_markdown.png]]
 
 * org-mode
 
@@ -106,7 +106,7 @@ Discord, 掲示板サイトのReddit, Notionで使える。
 #+end_notes
 
 ** org-mode記法
-[[file:/assets/org-mode.png]]
+[[file:/assets/markdown-in-org-mode_org-mode.png]]
 
 * プログラムを埋め込む
 
@@ -158,7 +158,7 @@ Discord, 掲示板サイトのReddit, Notionで使える。
 
 * スライドもOrg-Mode
 
-[[file:/assets/slides.png]]
+[[file:/assets/markdown-in-org-mode_slides.png]]
 
 ** [[https://github.com/yjwen/org-reveal][=ox-reveal=]] でスライド生成
 [[https://revealjs.com/][reveal.js]] フレームワークを元にスライド化
