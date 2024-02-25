@@ -8,7 +8,8 @@
 
 (require 'ox-publish)
 
-(setq org-html-validation-link nil)
+(setq org-html-validation-link nil
+      org-html-scripts nil)
 
 (setq org-publish-project-alist
       (list
