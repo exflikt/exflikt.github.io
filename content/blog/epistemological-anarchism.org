@@ -3,7 +3,7 @@
 #+LANGUAGE: ja
 #+HTML_HEAD_EXTRA: <meta property="og:title" content="地動説を唱えたガリレオは非理性的だった" />
 #+HTML_HEAD_EXTRA: <meta property="og:type" content="blog" />
-#+HTML_HEAD_EXTRA: <meta property="og:url" content="https://yaledsuomr.one/blog/epistemological-anarchism.html" />
+#+HTML_HEAD_EXTRA: <meta property="og:url" content="https://blog.wayoverd.one/blog/epistemological-anarchism.html" />
 #+HTML_HEAD_EXTRA: <meta property="og:description" content="裏TUTアドベントカレンダー2023 の11日目の記事です。前日の記事はゆなさんの「自己防衛の方法についてメンタルカスな人が語ってみた」でした。私の自己防衛方法は ... " />
 #+HTML_HEAD_EXTRA: <meta property="og:locale" content="ja_JP" />
 

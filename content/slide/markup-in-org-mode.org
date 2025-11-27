@@ -10,7 +10,7 @@
 #+REVEAL_PLUGINS: (markdown highlight notes)
 #+HTML_HEAD_EXTRA: <meta property="og:title" content="org-modeという闇鍋マークアップ言語について" />
 #+HTML_HEAD_EXTRA: <meta property="og:type" content="website" />
-#+HTML_HEAD_EXTRA: <meta property="og:url" content="https://yaledsuomr.one/slide/markup-in-org-mode.html" />
+#+HTML_HEAD_EXTRA: <meta property="og:url" content="https://blog.wayoverd.one/slide/markup-in-org-mode.html" />
 # #+HTML_HEAD_EXTRA: <meta property="og:description" content="aaa" />
 #+HTML_HEAD_EXTRA: <meta property="og:locale" content="ja_JP" />
 

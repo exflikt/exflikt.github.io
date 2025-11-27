@@ -41,7 +41,7 @@
              :base-directory "./content/slide/"
              :publishing-directory "./public/slide/"
              :publishing-function 'org-reveal-publish-to-reveal)
-       (list "yaledsuomr.one"
+       (list "blog.wayoverd.one"
              :components (list "assets" "blog" "slide"))))
 
-(org-publish "yaledsuomr.one" t)
+(org-publish "blog.wayoverd.one" t)
