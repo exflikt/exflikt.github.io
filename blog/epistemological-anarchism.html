@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>地動説を唱えたガリレオは非理性的だった</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,20 +189,19 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <style type="text/css">
 /* Base */html,body {    background-color: #222;    min-height: 100%;    line-height: 1.5;}body {    color: #fafafa;    font-family: "Courier New";}::selection {    background-color:  #2ecc40;    color: white;}/* Responsive content positioning */@media only screen and (min-width: 1020px) /* Large screens */{    body{        padding: 5vh 25vw;    }}@media only screen and (max-width: 1020px) and (min-width: 750px) /* Small screens */{    body{        padding: 5vh 10vw;    }}@media only screen and (max-width: 750px) /* Small screens */{    body{        padding: 2vh 5vw;    }}/* Headers */h1{font-size: 2.5rem;}h2{font-size: 1.7rem;}h1 > .subtitle, h3, h4, h5, h6{font-size: 1.3rem;}.title{ line-height: 1.5; margin-bottom: 2.5rem;}/* Padding & Margin */* {margin: 0; padding: 0;}pre, blockquote, ul, ol, p, table{    margin: 1rem 0;}h1, h2{margin-top: 2rem; line-height: 2rem;}h3, h4, h5, h6{margin-top: 1rem;}/* Links  */a, a:visited {    color: #01ff70;    text-decoration: underline;}a:hover, a:focus, a:active {    color: #2ecc40;}/* Code */pre {    font-family: "Courier New";    padding: .5rem;    background-color: #333;    padding: 0.5rem;    border-radius: 0.2rem;    font-size: 0.9rem;    color: #EEE;    overflow-x: auto;}.org-keyword{    color: #01ff70;}.org-rainbow-delimiters-depth-1{    color: #2ecc40;}.org-rainbow-delimiters-depth-2{    color: #01ff70;}/* Blockquotes */blockquote {    border-left: 3px solid #01ff70;    padding-left: 1rem;}li{    list-style-position: inside;}/* Tags */.tag{    margin-top: 0.5rem;    display: block;    color: white;    font-size: var(--font-size-xsmall);}.tag > span{		font-weight: 400;    font-size: 0.8rem;    background-color: #444;    text-transform: uppercase;    border-radius: 2px;    width: fit-content;    height: auto;    padding: 1px 5px;}/* Keywords */.todo{    color: #2ecc40;}.done{    color: #444;}/* Overflows */.outline-text-2, .outline-text-3, .outline-text-4{	  max-width: 100%;	  overflow-x: auto;}/* Table */tr:nth-child(even) {    background-color: #333;}th, td{    padding: 0.5rem;    text-align: center;}.underline{    text-decoration: underline;}img{    max-width: 100%;    height: auto;}
 </style>
 <meta property="og:title" content="地動説を唱えたガリレオは非理性的だった" />
 <meta property="og:type" content="blog" />
-<meta property="og:url" content="https://yaledsuomr.one/blog/epistemological-anarchism.html" />
+<meta property="og:url" content="https://blog.wayoverd.one/blog/epistemological-anarchism.html" />
 <meta property="og:description" content="裏TUTアドベントカレンダー2023 の11日目の記事です。前日の記事はゆなさんの「自己防衛の方法についてメンタルカスな人が語ってみた」でした。私の自己防衛方法は ... " />
 <meta property="og:locale" content="ja_JP" />
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <p>
 <a href="https://adventar.org/calendars/9090">裏TUTアドベントカレンダー2023</a> の11日目の記事です。前日の記事はゆなさんの<a href="https://note.com/ch1na_peanuts/n/nfbd48198b417">「自己防衛の方法についてメンタルカスな人が語ってみた」</a>でした。私の自己防衛方法は「知り合いネットワークを狭く保つ」です。というのは嘘で、単にコミュニケーション能力がなくて友達作るのが億劫なだけです。自己防衛するほどのメンタル攻撃がされていないとも言えます。
 </p>
@@ -213,14 +213,14 @@
 </p>
 
 
-<div class="figure">
+<div id="orgcfe4363" class="figure">
 <p><img src="/assets/Paul_Feyerabend_Berkeley.jpg" alt="The philosopher Paul Feyerabend in Berkeley." />
 </p>
 </div>
 
-<div id="outline-container-org07f5f67" class="outline-2">
-<h2 id="org07f5f67">科学と科学でないもの</h2>
-<div class="outline-text-2" id="text-org07f5f67">
+<div id="outline-container-orga14b1ac" class="outline-2">
+<h2 id="orga14b1ac">科学と科学でないもの</h2>
+<div class="outline-text-2" id="text-orga14b1ac">
 <p>
 Science (科学) の語源を知っていますか。色々説はありますが、Knowledge (知識) を意味するラテン語から来ているとされています。Science という言葉が仮説と検証を繰り返えす積み上げ式の自然物理科学としての意味を持ち始めたのは19世紀中頃からです。元々は、非科学的であると呼ばれるものはありませんでした。なぜなら、神学でも錬金術でも占星術でも、とにかく知識の集合体として認識できるものであればなんでも科学と呼ばれていたからです。
 </p>
@@ -231,9 +231,9 @@ Science (科学) の語源を知っていますか。色々説はありますが
 </div>
 </div>
 
-<div id="outline-container-org653f649" class="outline-2">
-<h2 id="org653f649">Anything Goes (なんでもあり)</h2>
-<div class="outline-text-2" id="text-org653f649">
+<div id="outline-container-orgdf62b27" class="outline-2">
+<h2 id="orgdf62b27">Anything Goes (なんでもあり)</h2>
+<div class="outline-text-2" id="text-orgdf62b27">
 <p>
 ファイヤアーベントは、この論理実証主義に対してもっとアナーキーな視点を取り入るべきだという批判をしました。さらには、「科学は本質的にアナーキスト的な営為である」とさえ言っています。
 </p>
@@ -272,18 +272,18 @@ Science (科学) の語源を知っていますか。色々説はありますが
 </div>
 </div>
 
-<div id="outline-container-org246714b" class="outline-2">
-<h2 id="org246714b">追記</h2>
-<div class="outline-text-2" id="text-org246714b">
+<div id="outline-container-org7a8960d" class="outline-2">
+<h2 id="org7a8960d">追記</h2>
+<div class="outline-text-2" id="text-org7a8960d">
 <p>
 読者がコメント・リアクションできないのもあれかなと思って<a href="https://x.com/exflikt/status/1733879273830953126">ツイート</a>しました。X を見るときは Nitter を使っていましたが、仕様が変わってログインしないと見れない時期があったのでアカウントだけ作っています。今は普通に Nitter 使えるのでアカウントを覗きに行くのは今回だけになるかもです。コメント機能、、、実装してみようかな？
 </p>
 </div>
 </div>
 
-<div id="outline-container-org39a8cb5" class="outline-2">
-<h2 id="org39a8cb5">参考文献</h2>
-<div class="outline-text-2" id="text-org39a8cb5">
+<div id="outline-container-org736b4fe" class="outline-2">
+<h2 id="org736b4fe">参考文献</h2>
+<div class="outline-text-2" id="text-org736b4fe">
 <ul class="org-ul">
 <li>Feyerabend, P. Against Method | The Anarchist Library
 <a href="https://theanarchistlibrary.org/library/paul-feyerabend-against-method">https://theanarchistlibrary.org/library/paul-feyerabend-against-method</a></li>
